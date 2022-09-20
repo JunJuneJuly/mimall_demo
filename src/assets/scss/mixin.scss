@@ -1,0 +1,19 @@
+@mixin flex($hov:space-between,$col:center){
+  display: flex;
+  justify-content: $hov;
+  align-items: $col;
+}
+@mixin bgImg($h:0,$w:0,$img:'',$size:contain){
+  display: inline-block;
+  height: $h;
+  width: $w;
+  background: url($img) no-repeat center;
+  background-size: $size;
+}
+@mixin position($pos:fixed,$w:100%,$h:100%,$t:0,$l:0){
+  position: $pos;
+  width: $w;
+  height: $h;
+  top: $t;
+  left: $l;
+}
